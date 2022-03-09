@@ -87,21 +87,21 @@
     {
         "key": "Cmd+j",
         "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "!suggestWidgetVisible && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "f4",
         "command": "-search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "!suggestWidgetVisible && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "Cmd+k",
         "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "!suggestWidgetVisible && (hasSearchResult || inSearchEditor)"
     },
     {
         "key": "shift+f4",
         "command": "-search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "!suggestWidgetVisible && (hasSearchResult || inSearchEditor)"
     }
 ]
